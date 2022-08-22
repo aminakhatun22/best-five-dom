@@ -65,7 +65,34 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 
 
 
-});
 
+
+
+    document.getElementById('calculateTotal-btn').addEventListener('click', function () {
+        console.log('kk')
+        const managerExpense = document.getElementById('manager-expense');
+        const managerExpenseAmountString = managerExpense.value;
+        const managerExpenseAmount = parseInt(managerExpenseAmountString);
+        console.log(managerExpenseAmount);
+
+        const coachExpense = document.getElementById('coach-expense');
+        const coachExpenseAmountString = coachExpense.value;
+        const coachExpenseAmount = parseInt(coachExpenseAmountString);
+        console.log(coachExpenseAmount);
+
+
+        const totalExpenseAmountString = playerExpense + managerExpenseAmount + coachExpenseAmount;
+        console.log(totalExpenseAmountString);
+        const totalExpenseAmount = parseInt(totalExpenseAmountString);
+        const totalExpense = document.getElementById('total-expense');
+        totalExpense.innerText = totalExpenseAmount;
+
+
+
+
+
+
+    });
+});
 
 

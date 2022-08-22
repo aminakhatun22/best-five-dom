@@ -43,7 +43,7 @@
                 </div>
                 <!--card---2 -->
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ml-20">
-                    <img src="images/938855-neymar-celebrating-psg-vs-amiens-ligue-1-2019.jpg" alt="" class="h-70">
+                    <img src="images/neimar.jpg" alt="" class="h-70">
                     <h1 class="text-center text-2xl mt-12" id="player-two">Neimar</h1>
                     <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-2" onclick='save("select-2");    this.disabled =true;
                     this.setAttribute("style", "color: #ccc");'>
@@ -53,7 +53,7 @@
                 <!-- card-3 -->
 
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ">
-                    <img src="images/kelani.jpg" alt="" class="h-50">
+                    <img src="images/Kylian Mbappé.jpg" alt="" class="h-50">
                     <h1 class="text-center text-2xl mt-5 p-3" id="player-three">Kylian Mbappé</h1>
                     <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-3" onclick='save("select-3");    this.disabled =true;
                     this.setAttribute("style", "color: #ccc");'>
@@ -87,7 +87,7 @@
                 <!-- card-5 -->
 
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ml-20">
-                    <img src="images/dariii.jpg" alt="" class="h-50">
+                    <img src="images/Sergio Ramos.jpg" alt="" class="h-50">
                     <h1 class="text-center text-2xl mt-5 p-3" id="player-five">Sergio Ramos</h1>
                     <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-5" onclick='save("select-5");    this.disabled =true;
                     this.setAttribute("style", "color: #ccc");'>
@@ -118,30 +118,32 @@
                     </button>
                     <div class="flex">
                         <h1 class="mt-5 ml-3 text-1xl">Player Expence</h1>
-                        <input type="text" placeholder=""
-                            class=" border-solid border-2 border-white bg-black text-white   w-24 ml-4 mt-5"
-                            id="player-expense">
+                        <input type="text" placeholder="" class=" 
+                         bg-black text-white   w-24 ml-4 mt-5" id="player-expense">
+
                     </div>
                     <div class="flex">
                         <h1 class="mt-5 ml-3 text-1xl">Manager</h1>
-                        <input type="text" placeholder=""
-                            class=" border-solid border-2 border-white bg-black text-white   w-24 ml-14 mt-5">
+                        <p> <input type="text" placeholder=""
+                                class=" border-solid border-2 border-white bg-black text-white w-24 ml-14 mt-5"
+                                id="manager-expense"></p>
 
                     </div>
                     <div class="flex">
                         <h1 class="mt-5 ml-3 text-1xl">Coach</h1>
                         <input type="text" placeholder=""
-                            class=" border-solid border-2 border-white bg-black text-white   w-24 ml-20 mt-5">
+                            class=" border-solid border-2 border-white bg-black text-white w-24 ml-20 mt-5"
+                            id="coach-expense">
 
                     </div>
-                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5">
+                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="calculateTotal-btn">
                         Calculate Total
                     </button>
 
 
                     <div class="flex mb-5">
                         <h1 class="mt-5 ml-3 text-1xl">Total</h1>
-                        <h1 class="   text-red-600 w-24 ml-32 mt-5">$11000</h1>
+                        <h1 class="   text-red-600 w-24 ml-32 mt-5" id="total-expense">$</h1>
                     </div>
                 </div>
             </div>
