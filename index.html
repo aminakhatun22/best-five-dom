@@ -36,8 +36,9 @@
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ml-36">
                     <img src="images/messi.jpg" alt="" class=" h-50">
                     <h1 class="text-center text-2xl mt-5 p-3" id="player-one">Lionel Messi</h1>
-                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-1" onclick='save("select-1");    this.disabled =true;
-                        this.setAttribute("style", "color: #ccc");'>
+                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-1" onclick='buttonDisable("select-1");    this.disabled =true;
+                        this.setAttribute("style", "background-color:grey")
+                        // setAttribute("style", "color: gray");'>
                         Select
                     </button>
                 </div>
@@ -45,8 +46,8 @@
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ml-20">
                     <img src="images/neimar.jpg" alt="" class="h-70">
                     <h1 class="text-center text-2xl mt-12" id="player-two">Neimar</h1>
-                    <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-2" onclick='save("select-2");    this.disabled =true;
-                    this.setAttribute("style", "color: #ccc");'>
+                    <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-2" onclick='buttonDisable("select-2");    this.disabled =true;
+                    this.setAttribute("style", "background-color:grey");'>
                         Select
                     </button>
                 </div>
@@ -55,8 +56,8 @@
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ">
                     <img src="images/Kylian Mbappé.jpg" alt="" class="h-50">
                     <h1 class="text-center text-2xl mt-5 p-3" id="player-three">Kylian Mbappé</h1>
-                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-3" onclick='save("select-3");    this.disabled =true;
-                    this.setAttribute("style", "color: #ccc");'>
+                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-3" onclick='buttonDisable("select-3");    this.disabled =true;
+                    this.setAttribute("style", "background-color:grey");'>
                         Select
                     </button>
                 </div>
@@ -79,8 +80,8 @@
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ml-36">
                     <img src="images/virot.jpg" alt="" class="h-50">
                     <h1 class="text-center text-2xl mt-12" id="player-four">Vítor Machado</h1>
-                    <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-4" onclick='save("select-4");    this.disabled =true;
-                    this.setAttribute("style", "color: #ccc");'>
+                    <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-4" onclick='buttonDisable("select-4");    this.disabled =true;
+                    this.setAttribute("style", "background-color:grey");'>
                         Select
                     </button>
                 </div>
@@ -89,8 +90,8 @@
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white ml-20">
                     <img src="images/Sergio Ramos.jpg" alt="" class="h-50">
                     <h1 class="text-center text-2xl mt-5 p-3" id="player-five">Sergio Ramos</h1>
-                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-5" onclick='save("select-5");    this.disabled =true;
-                    this.setAttribute("style", "color: #ccc");'>
+                    <button class=" bg-blue-600 center rounded p-2 mt-5 w-48 mx-5" id="select-5" onclick='buttonDisable("select-5");    this.disabled =true;
+                    this.setAttribute("style", "background-color:grey");'>
                         Select
                     </button>
                 </div>
@@ -98,8 +99,8 @@
                 <div class="w-9/12 h-80 border-solid border-2 border-gray-600 mt-5 bg-black text-white">
                     <img src="images/sanches.jpg" alt="" class="h-50">
                     <h1 class="text-center text-2xl mt-12" id="player-six">Renato Sanches</h1>
-                    <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-6" onclick='save("select-6");    this.disabled =true;
-                    this.setAttribute("style", "color: #ccc");'>
+                    <button class=" bg-blue-600 center rounded p-2 mt-12 w-48 mx-5" id="select-6" onclick='buttonDisable("select-6");    this.disabled =true;
+                    this.setAttribute("style", "background-color:grey");'>
                         Select
                     </button>
                 </div>
@@ -117,9 +118,9 @@
                         Calculate
                     </button>
                     <div class="flex">
-                        <h1 class="mt-5 ml-3 text-1xl">Player Expence</h1>
-                        <input type="text" placeholder="" class=" 
-                         bg-black text-white   w-24 ml-4 mt-5" id="player-expense">
+                        <h1 class="mt-5 ml-3 text-1xl">Player Expence<span class="ml-16 text-blue-600 ">$</span></h1>
+                        <p> <input type="text" placeholder="" class=" 
+                         bg-black text-blue-600   w-24  mt-11 mr-2" id="player-expense"> </p>
 
                     </div>
                     <div class="flex">
@@ -142,8 +143,14 @@
 
 
                     <div class="flex mb-5">
-                        <h1 class="mt-5 ml-3 text-1xl">Total</h1>
-                        <h1 class="   text-red-600 w-24 ml-32 mt-5" id="total-expense">$</h1>
+                        <h1 class="mt-5 ml-3 text-1xl">Total<span class="mt-12  ml-16 text-red-600">$</span></h1>
+                        <!-- <p><input type="text" class="   text-red-600 w-24 ml-32 mt-5" id="total-expense"> <span>$</span>
+                        </p> -->
+                        <p>
+                        <h1 class="text-red-600 w-24  mt-5" id="total-expense">
+
+                        </h1>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -153,7 +160,7 @@
 
 
     <script src="js/select-player.js"></script>
-    <script src="/js/common.js"></script>
+    <script src="js/common.js"></script>
 </body>
 
 </html>
